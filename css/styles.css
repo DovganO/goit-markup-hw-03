@@ -35,6 +35,23 @@ body {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header*/
 
 .roof {
@@ -53,7 +70,7 @@ body {
   /*padding-top: 94px;
   padding-bottom: 94px;*/
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /*outline: 2px solid tomato;*/
 }
 
 .container.head {
@@ -119,10 +136,6 @@ body {
   margin-left: auto;
 }
 
-.contacts .item {
-  /*outline: 1px solid tomato;*/
-}
-
 .contacts .item + .item {
   margin-left: 30px;
 }
@@ -175,7 +188,7 @@ body {
 .section.advantages {
   padding-top: 94px;
   padding-bottom: 94px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .advantages-list {
@@ -232,14 +245,15 @@ body {
   padding-bottom: 94px;
 }
 
-.work .section-title {
-  padding: 27px 82px;
-}
+/*.work .section-title {
+}*/
 
 .list.work .section-title {
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   border-radius: 0px 0px 4px 4px;
+  padding: 27px 82px;
+  max-height: 70px;
 }
 
 .work {
@@ -557,8 +571,8 @@ body {
   overflow: hidden;
 }
 
-.portfolio .example:hover,
-.portfolio .example:focus {
+.portfolio-list .example:hover,
+.portfolio-list .example:focus {
   background-color: var(--accent-color);
 }
 
@@ -582,8 +596,8 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-.portfolio-element .picture {
+/*.portfolio-element .picture {
   display: block;
   max-width: 100%;
   height: auto;
-}
+}*/
